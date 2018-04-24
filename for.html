@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>s-for</title>
+    </head>
+    <body>
+        <script src="https://unpkg.com/san@latest"></script>
+        <script>
+            var MyApp=san.defineComponent({
+                template:`
+                <dl>
+                    <dt>name-email></dt>
+                    <dd s-for"p,index in persons" title="{{p.name}}"> {{index+1}}.{{p.name}}({{dept}}) - {{p.email}}</dd>
+                </dl>`,                
+                initData:function(){
+                    return{
+                        dept:'ssg',
+                        persons:[
+                            {name:'errorrisk',emal:'errorisk@gamil.com'},
+                            {name:'otakustay',emal:'otakustay@gamil.com'}
+                        ]
+                    };
+                }
+              
+            });
+            var myApp=new  MyApp();
+            myApp.attach(document.body);
+        </script>
+    </body>
+</html>
