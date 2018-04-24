@@ -14,11 +14,12 @@
 
 <body>
 
-    <script src="../../../dist/san.js"></script>
+    <script src="https://unpkg.com/san@latest/dist/san.dev.js"></script>
 
     <script>
 
-    // 这里opacityTranser就是个例子，你可以使用san-transition库，也可以使用jQuery等库
+    //这里opacityTranser就是个例子，你可以使用san-transition库，也可以使用jQuery等库
+    
 
     var opacityTranser = {
 
@@ -141,6 +142,17 @@
     });
 
     myApp.attach(document.body);
+
+
+    // var myTransition=san.defineComponent({
+    //     template:`
+    //     <div><button s-transition="opacityTransition">click</button></div>
+    //     `,
+    //     opacityTransition:{
+
+    //     }
+
+    // });
 
     </script>
 
