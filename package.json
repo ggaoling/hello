@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
+,  "dev": "rd/s/q dist & parcel index.html" ,"build": "rd/s/q build & parcel build index.html -d build --public-url"},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ggaoling/hello.git"
